@@ -9,5 +9,3 @@ Currently, two official plugins are available:
 
 # install dependency
 npm i 
-or
-npm create vite@latest
