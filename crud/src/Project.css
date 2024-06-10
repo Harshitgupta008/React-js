@@ -1,0 +1,126 @@
+.crud-inputhold {
+    height: 400px;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.crud-inputcard {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.crud-inputcard input {
+    outline: none;
+    height: 55px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 0 9px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid hsla(0, 4%, 86%, 0.397);
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.crud-button {
+    height: 25px;
+    width: fit-content;
+    padding: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 19px;
+    border: 2px solid hsla(0, 4%, 86%, 0.397);
+    background-color: black;
+    color: rgb(201, 243, 29);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.crud-button:hover {
+    color: black;
+    background-color: rgb(201, 243, 29);
+}
+
+/* table part start here  */
+
+.crud-table {
+    height: fit-content;
+    margin-top: 20px;
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.crud-usercard {
+    display: flex;
+    height: 250px;
+    width: 375px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 10px;
+    flex-wrap: wrap;
+    border: 2px solid hsla(0, 4%, 86%, 0.397);
+}
+
+.crud-divname {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.crud-usernume {
+    display: flex;
+    gap: 20px;
+
+}
+
+.crud-userbutton {
+    display: flex;
+
+    gap: 15px;
+
+}
+
+.deletebut {
+    height: 45px;
+    width: 80px;
+    border-radius: 10px;
+    border: 2px solid hsla(0, 4%, 86%, 0.397);
+    background-color: black;
+    color: rgb(243, 29, 90);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.updatebut {
+    height: 45px;
+    width: 80px;
+    border-radius: 10px;
+    border: 2px solid hsla(0, 4%, 86%, 0.397);
+    background-color: black;
+    color: rgb(201, 243, 29);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.updatebut:hover {
+    color: black;
+    background-color: rgb(201, 243, 29);
+}
+
+.deletebut:hover {
+    color: black;
+    background-color: rgb(243, 29, 90);
+}
