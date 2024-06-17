@@ -1,13 +1,23 @@
 import { useState } from 'react'
 import './Project.css'
 
+const fixlocalstorage = () => {
+  const list = localStorage.getItem("crudWithHarshit");
+  if (!list) {
+    return [];
+  } else {
+    return JSON.parse(localStorage.getItem("crudWithHarshit"));
+  }
+}
+
 function Crud() {
+
   const [user, setUser] = useState({
     name: "", email: "", number: "", place: "",
   })
-  const [data, setDate] = useState([]);
-  const [condition,setCondition] = useState(false)
-  const [storeid,setStoreid] = useState(0);
+  const [data, setDate] = useState(fixlocalstorage());
+  const [condition, setCondition] = useState(false)
+  const [storeid, setStoreid] = useState(0);
 
   const handleinput = (e) => {
     const { name, value } = e.target;
@@ -28,14 +38,14 @@ function Crud() {
     })
     setDate(find);
   }
-  const UpdateUser = (id)=>{
+  const UpdateUser = (id) => {
     const find = data[id];
     setUser({ name: find.name, email: find.email, number: find.number, place: find.place, });
     setStoreid(id);
     setCondition(true);
-    
+
   }
-  const updatedata = ()=>{
+  const updatedata = () => {
     const find = [...data];
     find[storeid] = user;
     setDate(find);
@@ -43,6 +53,9 @@ function Crud() {
     setCondition(false);
     setUser({ name: "", email: "", number: "", place: "", });
   }
+  useEffect(() => {
+    localStorage.setItem("crudWithHarshit", JSON.stringify(data))
+  }, [data])
   return (
     <>
       <div className='crud-inputhold'>
@@ -54,10 +67,10 @@ function Crud() {
         </div>
         <div>
           {
-            !condition ?<button className='crud-button' onClick={addUser}>Add your data</button> 
-            :<button className='crud-button' onClick={updatedata}>Update your data</button>
+            !condition ? <button className='crud-button' onClick={addUser}>Add your data</button>
+              : <button className='crud-button' onClick={updatedata}>Update your data</button>
           }
-          
+
         </div>
       </div>
       <div className='crud-table'>
