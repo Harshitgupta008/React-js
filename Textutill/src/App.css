@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar1 {
+  background-color: rgb(205, 255, 255);
+  width: 100%;
+  height: 50px;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+  align-items: center;
+  height: 50px;
+}
+
+.bar2 {
+  display: flex;
+
+}
+
+.bar2 div {
+  margin-right: 15px;
+  border-bottom: 3px solid transparent;
+  transition: all ease;
+
+}
+
+
+.bar2 div:hover {
+  border-bottom: 3px solid rgb(90, 163, 171);
+
+
+}
+.linkchange{
+  text-decoration: none;
+  color: black;
+}
+
+/* container form start here */
+
+.container2 {
+  width: 100%;
+  height:max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(252, 252, 226);
+  margin-bottom: 10px;
+}
+.scrr{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.scrr h3{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.statement {
+  outline: none;
+  border: none;
+  height: 250px;
+  width: 90%;
+  resize: none;
+
+}
+
+.submit {
+  margin-top: 15px;
+  margin-right: 10px;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(251, 198, 142);
+}
+
+.but {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.output_container {
+  height: 300px;
+  width: 100%;
+
+}
+
+.scr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.scr textarea {
+  height: 150px;
+  width: 80%;
+  cursor: all-scroll;
+  outline: none;
+  border: 2px solid black;
+  padding: 5px 5px;
+  background-color: rgb(253, 253, 235);
+  resize: none;
+}
+
+
+.cent {
+
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.cent h2 {
+  color: red;
+
+}
+
+.state {
+  display: flex;
+  gap: 10px;
+}
